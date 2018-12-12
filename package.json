@@ -1,0 +1,17 @@
+{
+  "name": "gist-runner",
+  "description": "Simple script to run github gist files in localhost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "gist": "index.js"
+  },
+  "author": "Oscar Otero",
+  "license": "MIT",
+  "dependencies": {
+    "github-markdown-css": "^2.10.0",
+    "highlight.js": "^9.13.1",
+    "markdown-it": "^8.4.2",
+    "node-fetch": "^2.3.0"
+  }
+}
