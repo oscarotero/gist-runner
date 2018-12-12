@@ -32,7 +32,7 @@ function md(content) {
     );
     const css_highlight = fs.readFileSync(path.join(__dirname, '../node_modules/highlight.js/styles/github-gist.css'));
 
-    return Buffer.from(`
+    return `
     <html>
     <head>
     <meta charset="utf8">
@@ -63,5 +63,5 @@ function md(content) {
     </article>
     <body>
     </html>
-    `);
+    `;
 }
