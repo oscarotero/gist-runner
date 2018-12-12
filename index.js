@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const http = require('http');
 const fetch = require('node-fetch');
 const id = process.argv[2];
@@ -31,7 +33,9 @@ fetch(gist)
             return responses.file(res, file);
         }).listen(8080);
 
-        console.log('http://localhost:8080');
+        console.log('');
+        console.log('  Gist served in http://localhost:8080');
+        console.log('');
 
         function getFile(req) {
             const key = req.url.slice(1);

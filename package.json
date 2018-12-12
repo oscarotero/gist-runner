@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "bin": {
-    "gist": "index.js"
+    "gist-runner": "index.js"
   },
   "author": "Oscar Otero",
   "license": "MIT",
