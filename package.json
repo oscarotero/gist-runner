@@ -1,7 +1,7 @@
 {
   "name": "gist-runner",
   "description": "Simple script to run github gist files in localhost",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "bin": {
     "gist-runner": "index.js"

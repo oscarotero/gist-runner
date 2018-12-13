@@ -34,7 +34,7 @@ fetch(gist)
         }).listen(8080);
 
         console.log('');
-        console.log('  Gist served in http://localhost:8080');
+        console.log(`  Gist served in ${green('http://localhost:8080')}`);
         console.log('');
 
         function getFile(req) {
@@ -46,4 +46,13 @@ fetch(gist)
 
             return data.files[key] || null;
         }
-    });
+    })
+    .catch(err => console.error(red(err)));
+
+function red(message) {
+    return '\u001b[' + 31 + 'm' + message + '\u001b[' + 39 + 'm';
+}
+
+function green(message) {
+    return '\u001b[' + 32 + 'm' + message + '\u001b[' + 39 + 'm';
+}
